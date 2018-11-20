@@ -1,0 +1,114 @@
+/*-------------------Header-------------------------*/
+.site-header-sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.logo img {
+    height: 40px;
+}
+.top-menu {
+    min-width: 50px;
+    display: flex;
+    align-items: center;
+}
+.page-width::after {
+    display: none;
+}
+.top-menu ul {
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 4px 0;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+.top-menu li {
+    display: block;
+}
+.top-menu li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #1d2733;
+    PADDING: 8px 24px;
+}
+.top-menu .cart {
+    display: block;
+    background: url("../images/cart.svg") center no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: -5px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    color: #1d2733;
+    margin-left: 10px;
+}
+
+.cart span {
+
+    position: relative;
+    left: 7px;
+    top: 6px;
+}
+/*------------------Page template------------------*/
+
+.bottle-row {
+    margin: 46px 0;
+}
+.bottle  label{
+    margin: 0 27px 16px;
+    padding: 13px 16px 2px 16px;
+    border-radius: 5px;
+    width: 162px;
+    cursor: pointer;
+}
+.bottle  p{
+    line-height: 1.43;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: rgba(47, 37, 51, 0.54);
+    margin: 0 0 13px;
+}
+.bottle-span {
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.25;
+    letter-spacing: 0.3px;
+    text-align: left;
+    color: #2f2533;
+}
+
+.btn-tab-block {
+    margin-top: 43px;
+}
+.btn-tab-block button {
+    padding: 12px 75px;
+}
+@media(max-width: 660px) {
+    .bottle {
+        margin: 46px 0;
+    }
+
+    .bottle-row {
+        margin: 0;
+    }
+    .site-header-sections {
+        flex-direction: column;
+        padding: 8px;
+    }
+    .top-menu .cart {
+        margin-left: 0;
+    }
+    .top-menu li a {
+        PADDING: 8px 10px;
+    }
+}
