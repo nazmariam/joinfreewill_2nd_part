@@ -57,58 +57,80 @@
     left: 7px;
     top: 6px;
 }
-/*------------------Page template------------------*/
+/*------------------Page hair diagnostic template------------------*/
 
-.bottle-row {
-    margin: 46px 0;
-}
-.bottle  label{
-    margin: 0 27px 16px;
-    padding: 13px 16px 2px 16px;
-    border-radius: 5px;
-    width: 162px;
-    cursor: pointer;
-}
-.bottle  p{
-    line-height: 1.43;
-    letter-spacing: 0.2px;
+.description {
     text-align: center;
-    color: rgba(47, 37, 51, 0.54);
-    margin: 0 0 13px;
+    max-width: 572px;
+    margin: 0 auto 64px;
 }
-.bottle-span {
-    font-size: 16px;
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.25;
-    letter-spacing: 0.3px;
-    text-align: left;
+.diagnostic h3 {
+    font-size: 28px;
+    font-weight: normal;
     color: #2f2533;
+    margin-bottom: 8px;
+}
+.graph-box {
+    display: flex;
+    flex-direction: row;
+}
+.graphs {
+    width: 50%;
+    padding-right: 67px;
+}
+.graph {
+    margin-bottom: 26px;
+}
+.graph-description {
+    width: 50%;
+}
+.graph-description h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #4a4a4a;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+    letter-spacing: 1.5px;
+}
+.graph-description p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.3px;
+    color: rgba(47, 37, 51, 0.8);
+}
+.graph-line {
+    background-color: #f8e3e7;
+    width: 100%;
+    height: 23px;
+}
+.graph-line-fill {
+    background-color: #fea0a1;
+    height: 23px;
+}
+.graph-title {
+    color: rgba(47, 37, 51, 0.8);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.graph-description div {
+    margin: 0 0 29px 0;
+}
+.diagnostic .btn-tab-block {
+    text-align: center;
 }
 
-.btn-tab-block {
-    margin-top: 43px;
-}
-.btn-tab-block button {
-    padding: 12px 75px;
-}
 @media(max-width: 660px) {
-    .bottle {
-        margin: 46px 0;
-    }
-
-    .bottle-row {
-        margin: 0;
-    }
-    .site-header-sections {
+    .graph-box {
         flex-direction: column;
-        padding: 8px;
+        justify-content: center;
     }
-    .top-menu .cart {
-        margin-left: 0;
+    .graphs {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 40px;
     }
-    .top-menu li a {
-        PADDING: 8px 10px;
+    .graph-description {
+        width: 100%;
     }
 }
