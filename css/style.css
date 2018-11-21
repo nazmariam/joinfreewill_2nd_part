@@ -119,7 +119,12 @@
 .diagnostic .btn-tab-block {
     text-align: center;
 }
-
+.btn-tab-block {
+    margin-top: 36px;
+}
+.btn-tab-block button {
+    padding: 12px 75px;
+}
 @media(max-width: 660px) {
     .graph-box {
         flex-direction: column;
